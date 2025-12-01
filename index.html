@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Devmoney</title>
+</head>
+<body>
+
+    <main>
+        <img class="logo-dev-money" src="./assets/images/logo-dev-money.png" alt="logo-dev-money">
+
+        <div class="container">
+            <section>
+                <label>Converte <strong>de</strong></label>
+                <select id="currency-from">
+                    <option value="real" data-valor="1.00" data-reg="pt-BR" data-sig="BRL" selected>R$ Real Brasileiro</option>
+                    <option value="dolar" data-valor="5.30" data-reg="en-US" data-sig="USD">$ Dólar Americano</option>
+                    <option value="euro" data-valor="6.16" data-reg="de-DE" data-sig="EUR">¢ Euro</option>
+                    <option value="libra" data-valor="6.97" data-reg="en-GB" data-sig="GBP">£ Libra</option>
+                    <option value="iene" data-valor="29.17" data-reg="pt-BR" data-sig="JYP">¥ Iene Japones</option>
+                    <option value="bitcoin" data-valor="524.60113" data-reg="de-DE" data-sig="BTC">฿ Biticoin</option>
+                </select>
+            </section>
+
+            <section>
+                <label>Converte <strong>para</strong></label>
+                <select id="currency-to">
+                    <option value="real" data-valor="1.00" data-reg="pt-BR" data-sig="BRL">R$ Real Brasileiro</option>
+                    <option value="dolar" data-valor="5.30" data-reg="en-US" data-sig="USD" selected>$ Dólar Americano</option>
+                    <option value="euro" data-valor="6.16" data-reg="de-DE" data-sig="EUR">¢ Euro</option>
+                    <option value="libra" data-valor="6.97" data-reg="en-GB" data-sig="GBP">£ Libra</option>
+                    <option value="iene" data-valor="29.17" data-reg="pt-BR" data-sig="JYP">¥ Iene Japones</option>
+                    <option value="bitcoin" data-valor="524.60113" data-reg="de-DE" data-sig="BTC">฿ Biticoin</option>
+                </select>
+            </section>
+
+            <section>
+                <label>Valor</label>
+                <input id="currency-value" type="text" placeholder="00.00" value="0">
+            </section>
+            <button class="btn-convert">Converter</button>
+
+            <section class="convert-view">
+                <div>
+                    <img  class="logo-country-from" src="./assets/images/brasil.png" alt="logo-brasil">
+                    <p id="currency-of-origin">Real</p>
+                    <p class="valores currency-value-in">00.00</p>
+                </div>
+
+                <img src="./assets/images/arrow.png" alt="seta">
+
+                <div>
+                    <img class="logo-country" src="./assets/images/estados-unidos.png" alt="logo-usa">
+                    <p id="converted-currency-country">Dólar</p>
+                    <p class="valores converted-currency">$00.00</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    
+</body>
+
+<script src="./assets/js/scripts.js"></script>
+</html>
