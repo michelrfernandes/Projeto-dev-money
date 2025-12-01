@@ -2,7 +2,7 @@
 
 This project was developed during the DevClub course. Its objective is to convert the value of each currency to its respective country's value, using a fake value for the calculation.
 
-Technology: HTML5, CSS3, Javascript
+Technology: Javascript,HTML5, CSS3
 
 Stack: Front-end
 
